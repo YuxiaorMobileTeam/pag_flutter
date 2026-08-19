@@ -2,9 +2,3 @@ include: package:flutter_lints/flutter.yaml
 
 # Additional information about this file can be found at
 # https://dart.dev/guides/language/analysis-options
-
-analyzer:
-  exclude:
-    # Pigeon 生成的代码，不参与 lint
-    # （其 const 局部变量带下划线，与 flutter_lints 6.0 新增的 constant_identifier_names 冲突）
-    - '**/*.g.dart'
