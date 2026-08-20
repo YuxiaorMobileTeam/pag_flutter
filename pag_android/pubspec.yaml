@@ -15,7 +15,8 @@ resolution: workspace
 dependencies:
   flutter:
     sdk: flutter
-  pag_platform_interface: ^0.0.2
+  pag_platform_interface:
+    path: ../pag_platform_interface
 
 dev_dependencies:
   flutter_test:
