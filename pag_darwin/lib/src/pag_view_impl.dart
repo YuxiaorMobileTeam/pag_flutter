@@ -11,7 +11,6 @@ abstract final class PAGViewImpl extends PAGView {
   PAGViewApi api;
 
   factory PAGViewImpl.iOS() => _PAGiOSViewImpl();
-  factory PAGViewImpl.macOS() => _PAGmacOSViewImpl();
 
   PAGViewImpl()
       : api = PAGViewApi(),
@@ -88,19 +87,6 @@ final class _PAGiOSViewImpl extends PAGViewImpl {
   Widget build(BuildContext context) {
     final identifier = api.pigeon_instanceManager.getIdentifier(api);
     return UiKitView(
-      viewType: _kViewType,
-      layoutDirection: TextDirection.ltr,
-      creationParams: identifier,
-      creationParamsCodec: const StandardMessageCodec(),
-    );
-  }
-}
-
-final class _PAGmacOSViewImpl extends PAGViewImpl {
-  @override
-  Widget build(BuildContext context) {
-    final identifier = api.pigeon_instanceManager.getIdentifier(api);
-    return AppKitView(
       viewType: _kViewType,
       layoutDirection: TextDirection.ltr,
       creationParams: identifier,

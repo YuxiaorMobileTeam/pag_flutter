@@ -31,5 +31,3 @@ flutter:
         default_package: pag_android
       ios:
         default_package: pag_darwin
-      macos:
-        default_package: pag_darwin

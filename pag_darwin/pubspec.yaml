@@ -1,5 +1,5 @@
 name: pag_darwin
-description: "iOS and macOS implementation of the pag_flutter plugin."
+description: "iOS implementation of the pag_flutter plugin."
 version: 0.0.1
 repository: "https://github.com/yanshouwang/pag"
 issue_tracker: "https://github.com/yanshouwang/pag/issues"
@@ -33,7 +33,3 @@ flutter:
         sharedDarwinSource: true
         pluginClass: PAGDarwinPlugin
         dartPluginClass: PAGiOSPlugin
-      macos:
-        sharedDarwinSource: true
-        pluginClass: PAGDarwinPlugin
-        dartPluginClass: PAGmacOSPlugin
