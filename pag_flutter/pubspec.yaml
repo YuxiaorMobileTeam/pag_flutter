@@ -1,8 +1,8 @@
 name: pag_flutter
 description: "A Flutter plugin for PAG(Portable Animated Graphics) files that renders After Effects animations natively across multiple platforms."
-version: 0.1.0
-repository: "https://github.com/yanshouwang/pag"
-issue_tracker: "https://github.com/yanshouwang/pag/issues"
+version: 0.1.1
+publish_to: none
+
 topics:
   - libpag
   - pag
@@ -15,9 +15,12 @@ resolution: workspace
 dependencies:
   flutter:
     sdk: flutter
-  pag_platform_interface: ^0.0.1
-  pag_android: ^0.0.2
-  pag_darwin: ^0.0.2
+  pag_platform_interface:
+    path: ../pag_platform_interface
+  pag_android:
+    path: ../pag_android
+  pag_darwin:
+    path: ../pag_darwin
 
 dev_dependencies:
   flutter_test:
